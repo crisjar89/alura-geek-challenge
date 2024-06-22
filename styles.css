@@ -1,0 +1,12 @@
+main {
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}  
+
+/* diseño del Cards-contenedor 50vh
+responsividad movil hasta 768px
+ */
