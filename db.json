@@ -1,0 +1,46 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Spiderman",
+            "precio": "$20.00",
+            "imagen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/117806947_01/w=800,h=800,fit=pad"
+        },
+        {
+            "id": 2,
+            "nombre": "Wolverine",
+            "precio": "$ 15.00",
+            "imagen": "https://cisemucr.com/wp-content/uploads/New-Project-2024-06-06T160149.973.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Capitán America",
+            "precio": "$ 17.50",
+            "imagen": "https://m.media-amazon.com/images/I/61BeCsuHy3L._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Thor",
+            "precio": "$ 21.25",
+            "imagen": "https://www.bigman.cl/wp-content/uploads/2022/08/889698624213.jpg"
+        },
+        {
+            "id": 5,
+            "nombre": "Antman",
+            "precio": "$17.50",
+            "imagen": "https://www.supermegapop.pe/wp-content/uploads/2023/12/LSM889698307246_0.jpg"
+        },
+        {
+            "id": 6,
+            "nombre": "Ironman",
+            "precio": "$22.00",
+            "imagen": "https://freakland.es/8872-large_default/funko-pop-avengers-game-iron-man-stark-tech-suit.jpg"
+        },
+        {
+            "id": 7,
+            "nombre": "Venom",
+            "precio": 18.50,
+            "imagen": "https://cdn.awsli.com.br/600x700/84/84034/produto/235547380/funko-pop--venom-82-exclusivo-cc-800-gk6h7n7lvb.jpg"
+        }
+    ]
+}

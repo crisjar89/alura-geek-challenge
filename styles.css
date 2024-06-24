@@ -1,3 +1,18 @@
+/* Ajustes del scrollbar principal */
+html ::-webkit-scrollbar{
+    background-color: rgba(255, 0, 0, 0.384);
+    width: 15px
+}
+html ::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgb(26, 26, 26);
+}
+html ::-webkit-scrollbar-thumb:hover{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Ajustes del footer y su contenido */
 header {
     height: 10vh;
     background-color: rgb(26, 26, 26);
@@ -30,7 +45,7 @@ p {
     font-size: medium;
 }
 
-
+/* Ajustes para el contenedor de cards */
 main {
     font-family: "Barriecito", system-ui;
     font-weight: 400;
@@ -51,6 +66,19 @@ main {
     border-radius: 3px;
     background-image: url(imagenes/marvel-bg.jpg);
     background-size: auto 100%;
+    
+}
+.contenedor h1 {
+    width: 25%;
+    margin: 15px auto;
+    font-weight: 850;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 200ms;
+    text-align: center;
+}
+.contenedor h1:hover {
+    background-color: rgba(255, 255, 255);
 }
 .cards-contenedor {
     display: flex;
@@ -59,7 +87,12 @@ main {
     flex-wrap: wrap;    
 }
 main ::-webkit-scrollbar{
-    background-color: rgb(243, 243, 243);
+    background-color: rgba(255, 0, 0, 0.384);
+    width: 10px
+}
+main ::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: black;
 }
 .card {
     max-width: 100%;
@@ -71,7 +104,7 @@ main ::-webkit-scrollbar{
     align-items: center;
     margin: 15px;
     border-radius: 10px;
-    box-shadow: -2px 2px 2px 1px #00000040;
+    box-shadow: -2px 2px 2px 1px #00000098;
 }
 .card-info {
     display: flex;
@@ -92,9 +125,38 @@ main ::-webkit-scrollbar{
 .trash {
     width: 1.5vw;
     margin: 5px;
+    transition: 200ms;
+}
+.trash:hover {
+    transform: scale(1.2);
 }
 
+/* Ajustes para el mensaje de - No hay contenido */
+.mensajes {
+    width: 40%;
+    margin: 25px auto;
+    padding: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+}
+.mensajes h2 {
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+.mensajes p {
+    text-align: center;
+}
+.imagen-error {
+    width: 50%;
+    margin: 15px 25%;
+}
 
+/* Ajustes del formulario para agregar elementos */
 .formulario {
     height: 50vh;
     width: 35%;
@@ -110,9 +172,15 @@ main ::-webkit-scrollbar{
     flex-direction: column;
     gap: 2vh;
 }
+.formulario-campo .titulo {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+}
 input {
     font-size: large;
-    padding: 8px 15px 6px 10px;
+    padding: 8px 10px 6px 15px;
     margin-top: 15px;
     border-radius: 18px;
     background-color: rgb(243, 243, 243);
@@ -135,24 +203,82 @@ button {
     color: rgb(197, 1, 1);
     font-weight: 800;
     background-color: rgb(26, 26, 26);
+    transition: 300ms;
+}
+.boton-enviar:hover {
+    transform: scale(1.1);
 }
 .boton-limpiar {
     color: rgb(26, 26, 26);
     font-weight: 800;
     background-color: rgb(197, 1, 1);
+    transition: 300ms;
+}
+.boton-limpiar:hover {
+    transform: scale(1.1);
 }
 
-
+/* Ajustes del pie de pagina */
 footer {
     position: relative;
     bottom: 0;
     height: 100px;
     background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.pie-logos {
+    display: flex;
+    gap: 20px;
 }
 footer h2 {
  color: rgb(243, 243, 243);
 }
 footer p {
     color: rgb(243, 243, 243);
+    margin: 5px 0;
+    padding: 0;
 }
+
+
 /* responsividad movil hasta 768px */
+
+@media (max-width:768px) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        
+    }
+    .formulario {
+        width: 70%;
+        margin: 10px 10%;
+        height: auto;
+    }
+    .contenedor {
+        width: 80%;
+
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer h2, footer p {
+        text-align: center;
+    }
+    .contenedor h1 {
+        width: 40%;
+    }
+    .producto {
+        width: 20vw;
+    }
+    .boton-enviar, .boton-limpiar {
+        transform: scale(0.9);
+    }
+    .boton-enviar:hover, .boton-limpiar:hover {
+        transform: scale(1);
+    }
+}
