@@ -202,11 +202,16 @@ input:hover {
     justify-content: space-between;
 }
 button {
+    width: 55%;
+    margin: 15px auto;
     font-size: large;
-    padding: 6px 13%;
-    margin-top: 15px;
+    padding: 6px 8%;
     border-radius: 18px;
     box-shadow: -2px 3px 5px 0px #00000075;
+    flex-wrap: wrap;
+}
+.boton {
+    
 }
 .boton-enviar {
     color: rgb(197, 1, 1);
