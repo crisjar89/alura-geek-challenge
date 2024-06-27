@@ -24,6 +24,7 @@
         <section class="contenedor">
             <h1 class="titulo">Mis Productos</h1>
             <section class="cards-contenedor" data-cards-contenedor>
+
             </section>
             <div class="mensajes">
                 <h2>¡Lo siento!</h2>
@@ -34,13 +35,11 @@
         <section class="formulario" >
             <form class="formulario-campo" data-formulario>
                 <h1 class="titulo">Agregar<br>Producto:</h1>
-                <input id="nombre" type="text" placeholder="nombre.."></input>
-                <input id="precio" type="text" placeholder="precio.."></input>
-                <input id="imagen" type="text" placeholder="imagen.."></input>
-                <fieldset class="botones">
-                    <button class="boton-enviar" type="submit" value="Enviar">Enviar</button>
-                    <button class="boton-limpiar" type="button" value="Limpiar">Limpiar</button>
-                </fieldset>
+                <input id="nombre" type="text" placeholder="nombre.." data-nombre></input>
+                <input id="precio" type="text" placeholder="precio.." data-precio></input>
+                <input id="imagen" type="text" placeholder="imagen.." data-imagen></input>
+                <button class="boton-enviar" type="submit" value="Enviar">Enviar</button>
+                <button class="boton-limpiar" type="button" value="Limpiar">Limpiar</button>
             </form>
         </section>
     </main>
@@ -54,7 +53,7 @@
             <p class="mencion">Alura Latam 2024</p>
         </div>
     </footer>
-    <script src="script.js" type="module"></script>
+    <script src="./js/mostrarProductos.js" type="module"></script>
 </body>
 
 </html>
