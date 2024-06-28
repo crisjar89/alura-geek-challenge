@@ -202,9 +202,10 @@ input:hover {
     justify-content: space-between;
 }
 button {
-    width: 55%;
+    width: 45%;
     margin: 15px auto;
-    font-size: large;
+    font-size: 2.5vh;
+    font-weight: bolder;
     padding: 6px 8%;
     border-radius: 18px;
     box-shadow: -2px 3px 5px 0px #00000075;
@@ -252,7 +253,9 @@ footer p {
     margin: 5px 0;
     padding: 0;
 }
-
+a {
+    color: rgb(243, 243, 243);
+}
 
 /* responsividad movil hasta 768px */
 

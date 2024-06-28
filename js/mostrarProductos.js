@@ -5,7 +5,7 @@ const productos = document.querySelector("[data-cards-contenedor]");
 
 function crearCard(nombre,precio,imagen) {
     const producto = document.createElement("div");
-    producto.className = "card";
+    producto.classList.add("card");
     producto.innerHTML = 
     `<img class="producto" src="${imagen}" />
     <div class="card-info">
