@@ -2,17 +2,20 @@
 import { conexionAPI } from "./conexion_api.js";
 const formulario = document.querySelector("[data-formulario]");
 
+async function nuevoProducto(evento){
 
-formulario.addEventListener("submit", evento => {
     evento.preventDefault();
 
     const nombre = document.querySelector("[data-nombre]").value;
     const precio = document.querySelector("[data-precio]").value;
     const imagen = document.querySelector("[data-imagen]").value;
 
-    conexionAPI.crearProducto(nombre,precio,imagen);
+    await conexionAPI.crearProducto(nombre,precio,imagen);
+        
+    console.log("producto agregado");
+}
 
-})
+formulario.addEventListener("submit", evento => nuevoProducto(evento));
 
 
 
