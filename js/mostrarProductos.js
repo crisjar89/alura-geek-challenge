@@ -24,4 +24,4 @@ async function listarProductos(){
     listaAPI.forEach(producto=>productos.appendChild(crearCard(producto.nombre,producto.precio,producto.imagen)))
 }
 
-listarProductos()
+listarProductos();

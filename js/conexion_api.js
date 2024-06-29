@@ -19,5 +19,5 @@ async function crearProducto(nombre, precio, imagen) {
 
 
 export const conexionAPI = {
-  listarProductos, crearProducto
+  listarProductos,  crearProducto
 }
