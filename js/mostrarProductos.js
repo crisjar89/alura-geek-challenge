@@ -3,7 +3,7 @@ import { conexionAPI } from "./conexion_api.js";
 
 const productos = document.querySelector("[data-cards-contenedor]");
 
-function crearCard(nombre,precio,imagen) {
+function crearCard(nombre, precio, imagen, id) {
     const producto = document.createElement("div");
     producto.classList.add("card");
     producto.innerHTML = 
@@ -12,7 +12,7 @@ function crearCard(nombre,precio,imagen) {
     <h2>${nombre}</h2>
     <div class="card-valor">
         <p>$ ${precio}</p>
-        <img class="trash" src="imagenes/trash-icon.png" id="" />
+        <img class="trash" src="assets/trash-icon.png" id="" />
     </div>`
 
     return producto;

@@ -64,7 +64,7 @@ main {
     box-shadow: -12px 10px 5.8px 0px #00000040;
     overflow-y: scroll;
     border-radius: 3px;
-    background-image: url(imagenes/marvel-bg.jpg);
+    background-image: url(../assets/marvel-bg.jpg);
     background-size: auto 100%;
     
 }
