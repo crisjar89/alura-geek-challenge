@@ -70,7 +70,7 @@ main {
 }
 .contenedor h1 {
     width: 25%;
-    margin: 15px auto;
+    margin: 15px auto 0 auto;
     font-weight: 850;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -121,7 +121,7 @@ main ::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: space-between;
     gap: 5vw;
-
+    margin-bottom: 5px;
 }
 .producto {
     width: 10vw;
@@ -130,16 +130,16 @@ main ::-webkit-scrollbar-thumb{
 .trash {
     width: 1.5vw;
     margin: 5px;
-    transition: 200ms;
+    transition: 100ms;
 }
 .trash:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 /* Ajustes para el mensaje de - No hay contenido */
 .mensajes {
     width: 40%;
-    margin: 25px auto;
+    margin: 5px auto;
     padding: 15px;
     display: none;
     justify-content: center;

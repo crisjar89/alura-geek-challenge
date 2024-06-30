@@ -1,7 +1,7 @@
 import { servicesProducts } from "../product.services/product.services.js";
 
 const productos = document.querySelector("[data-cards-contenedor]");
-const mensajeError = document.querySelector(".mensajes");
+const fomrulario = document.querySelector("[data-formulario]");
 
 function crearCard(nombre, precio, imagen, id) {
     const producto = document.createElement("div");
@@ -12,9 +12,17 @@ function crearCard(nombre, precio, imagen, id) {
     <h2>${nombre}</h2>
     <div class="card-valor">
         <p>$ ${precio}</p>
-        <img class="trash" src="assets/trash-icon.png" data-id="${id}" alt="trash-icon"/>
+        <img class="trash" src="assets/trash-icon.png" id="${id}" alt="trash-icon" data-id/>
     </div>`;
 
+    const botonEliminar = producto.querySelector(".trash")
+    botonEliminar.addEventListener("click", ()=>{
+        
+        const id = botonEliminar.id;
+        servicesProducts.borrarProducto(id)
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err))
+    })
 
     productos.appendChild(producto);
     return producto;
@@ -27,14 +35,28 @@ const render = async () => {
             productos.appendChild(
                 crearCard(producto.nombre, producto.precio, producto.imagen, producto.id)
             )
-    });
-    } catch (error) {
-        const mensajeError = document.querySelector(".mensajes");
+        });
+        
+        } catch (error) {
+            const mensajeError = document.querySelector("[data-error]");
         if (mensajeError) {
-            elemento.style.display = 'block';
+            mensajeError.style.display = 'block';
         }
-        console.log(error);
     }
 }
+
+fomrulario.addEventListener('submit', (evento)=> {
+    evento.preventDefault();
+
+    const nombre = document.querySelector("[data-nombre]").value;
+    const precio = document.querySelector("[data-precio]").value;
+    const imagen = document.querySelector("[data-imagen]").value;
+
+    servicesProducts
+        .crearProducto(nombre, precio, imagen)
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err))
+
+})
 
 render();
