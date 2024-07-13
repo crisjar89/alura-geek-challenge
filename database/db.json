@@ -43,10 +43,16 @@
       "imagen": "https://cdn.awsli.com.br/600x700/84/84034/produto/235547380/funko-pop--venom-82-exclusivo-cc-800-gk6h7n7lvb.jpg"
     },
     {
-      "id": "50a5",
-      "nombre": "Scarlet",
-      "precio": "19.25",
-      "imagen": "https://i.pinimg.com/736x/fd/7a/45/fd7a456a5132fc7bc881c49b3a1a9bb7.jpg"
+      "id": "ada0",
+      "nombre": "Groot",
+      "precio": "22",
+      "imagen": "https://rec-line.com/img/productos/800x800/849803051044.jpeg"
+    },
+    {
+      "id": "d5e4",
+      "nombre": "Loki",
+      "precio": "22.50",
+      "imagen": "https://m.media-amazon.com/images/I/71i9rPTpuCL.jpg"
     }
   ]
 }
